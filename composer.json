@@ -1,0 +1,31 @@
+{
+    "name": "glowpointzero/pischi",
+    "description": "An configurable file structure fuser, merging two directories recursively.",
+    "version": "0.1.0-dev",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Manuel Glauser",
+            "email": "mail@manuelglauser.ch"
+        }
+    ],
+    "bin": ["bin/pischi"],
+    "autoload": {
+        "psr-4": {
+            "Glowpointzero\\Pischi\\": "src/Classes"
+        }
+    },
+    "require": {
+        "symfony/console": "^3.0 || ^4.0",
+        "symfony/filesystem": "^3.0 || ^4.0"
+    },
+    "require-dev": {
+        "phpro/grumphp": "^0.14.1",
+        "friendsofphp/php-cs-fixer": "^2.12"
+    },
+    "extra": {
+        "grumphp": {
+            "config-default-path": "Build/grumphp.yml"
+        }
+    }
+}

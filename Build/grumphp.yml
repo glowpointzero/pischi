@@ -1,0 +1,14 @@
+parameters:
+    git_dir: '.'
+    bin_dir: vendor/bin
+    hide_circumvention_tip: true
+    ascii:
+        failed: nopecat.txt
+        succeeded: me-gusta.txt
+    tasks:
+        phpcsfixer2:
+            triggered_by: ['php']
+            config: Build/php_cs.php
+            config_contains_finder: false
+            allow_risky: true
+            verbose: true
